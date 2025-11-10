@@ -1,21 +1,19 @@
 {
   "expo": {
     "name": "Smart Transit",
-    "slug": "smarttransit",
+    "slug": "smartT",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "smartt",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
-
     "splash": {
       "image": "./assets/images/Logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#1447E6",
       "imageWidth": 220
     },
-
     "extra": {
       "API_URL": "https://smarttransit-api.onrender.com/v1",
       "PAYSTACK_PUBLIC_KEY": "pk_test_a898c9f9c40d3ae327aaaacbf7d2a71799c58732",
@@ -26,10 +24,18 @@
     },
 
     "ios": {
+      "bundleIdentifier": "com.smarttransit.smarttransit",
       "supportsTablet": true
     },
 
-    
+    "android": {
+      "package": "com.smarttransit.smarttransit",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
 
     "web": {
       "output": "static",
@@ -38,7 +44,6 @@
 
     "plugins": [
       "expo-router"
-
     ],
 
     "experiments": {
